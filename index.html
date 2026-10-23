@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#07111f">
-<meta name="description" content="Angel Belangel — IT Engineer specializing in Oracle Retail systems, database support, SQL/PLSQL, Linux, and batch operations.">
+<meta name="description" content="Angel Belangel — IT Engineer and frontend developer showcasing QueryVault, SkillLoop, Oracle Retail support, SQL/PLSQL, and database troubleshooting.">
 <title>Angel Belangel | IT Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +23,42 @@ section{padding:100px 0}.section-head{display:grid;grid-template-columns:.4fr 1.
 .skills-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px}.skill-intro{color:var(--muted)}.skill-group{padding:20px 0;border-bottom:1px solid var(--line)}.skill-group:first-child{padding-top:0}.skill-title{display:flex;justify-content:space-between;gap:20px;margin-bottom:14px;font-weight:700}.skill-title span{font-family:"DM Mono",monospace;color:var(--cyan);font-size:.7rem;font-weight:400}.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{border:1px solid #2b4359;padding:7px 10px;color:#b7c8d8;font-size:.68rem;letter-spacing:0}
 .timeline{border-left:1px solid #2c5267;margin-left:8px;padding-left:30px}.timeline-item{position:relative;padding:0 0 34px}.timeline-item:last-child{padding-bottom:0}.timeline-item:before{content:"";position:absolute;left:-36px;top:7px;width:11px;height:11px;background:var(--bg);border:2px solid var(--cyan);border-radius:50%;box-shadow:0 0 0 5px rgba(85,230,208,.08)}.timeline-date{font-family:"DM Mono",monospace;color:var(--cyan);font-size:.72rem}.timeline h3{margin:8px 0 6px;font-size:1.15rem}.timeline p{margin:0;color:var(--muted);font-size:.9rem;max-width:760px}.timeline ul{padding-left:19px;color:#b7c8d8;font-size:.86rem}.timeline li{margin:6px 0}
 .project-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.project{border:1px solid var(--line);background:var(--panel);padding:28px;min-height:230px;display:flex;flex-direction:column}.project-label{font-family:"DM Mono",monospace;color:var(--orange);font-size:.68rem}.project h3{font-size:1.35rem;letter-spacing:-.04em;margin:14px 0 9px}.project p{color:var(--muted);font-size:.88rem;margin:0 0 22px}.project .tags{margin-top:auto}
+.project-grid{align-items:stretch}
+.frontend-projects{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.project-showcase{padding:0;overflow:hidden;min-height:0}
+.project-preview{position:relative;display:block;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(135deg,#102a40,#07111f);border:0;border-bottom:1px solid var(--line);margin:0}
+.project-preview img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s ease;opacity:.95}
+.project-preview:hover img{transform:scale(1.035)}
+.preview-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:20px;color:var(--cyan);font-family:"DM Mono",monospace;font-size:clamp(1.5rem,3vw,2.5rem);letter-spacing:.08em;background:radial-gradient(circle at 70% 30%,rgba(85,230,208,.14),transparent 45%),linear-gradient(135deg,#102a40,#07111f)}
+.preview-fallback span{font-size:.7rem;color:var(--muted);letter-spacing:.14em}
+.project-content{padding:28px;display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.project-meta{display:flex;width:100%;justify-content:space-between;align-items:center;gap:16px}
+.project-number{font-family:"DM Mono",monospace;font-size:.72rem;color:#617d94}
+.project-showcase h3{font-size:1.55rem;margin:12px 0 10px}
+.project-showcase p{max-width:560px;min-height:72px}
+.project-showcase .tags{margin-top:0;margin-bottom:24px}
+.project-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+.project-action{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 14px;border:1px solid #31516b;color:var(--cyan);font-family:"DM Mono",monospace;font-size:.68rem;transition:.2s}
+.project-action:hover{border-color:var(--cyan);background:rgba(85,230,208,.08);transform:translateY(-2px)}
+.project-action.demo{background:var(--cyan);color:#06131e;border-color:var(--cyan);font-weight:700}
+.case-study-heading{margin:72px 0 24px;padding-top:32px;border-top:1px solid var(--line)}
+.case-study-heading h3{font-size:1.5rem;letter-spacing:-.04em;margin:8px 0}
+.case-study-heading p{color:var(--muted);max-width:680px;margin:0}
+.case-study-grid .project{min-height:215px}
+@media(max-width:700px){.frontend-projects{grid-template-columns:1fr}.project-showcase p{min-height:0}.case-study-heading{margin-top:52px}}
+
+.project-showcase{display:flex;flex-direction:column;gap:0}
+.project-preview{position:relative;display:block;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(135deg,#102a40,#07111f);border:1px solid #28445c;margin:-28px -28px 24px}
+.project-preview img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease;opacity:.94}
+.project-preview:hover img{transform:scale(1.035)}
+.preview-fallback{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:20px;color:var(--cyan);font-family:"DM Mono",monospace;font-size:clamp(1.4rem,3vw,2.2rem);letter-spacing:.08em;background:radial-gradient(circle at 70% 30%,rgba(85,230,208,.13),transparent 45%),linear-gradient(135deg,#102a40,#07111f)}
+.project-preview img:not([src=""])+.preview-fallback{display:none}
+.project-actions{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 20px}
+.project-action{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:10px 13px;border:1px solid #31516b;color:var(--cyan);font-family:"DM Mono",monospace;font-size:.68rem;letter-spacing:.04em;transition:.2s}
+.project-action:hover{border-color:var(--cyan);background:rgba(85,230,208,.08);transform:translateY(-2px)}
+.project-action.demo{background:var(--cyan);color:#06131e;border-color:var(--cyan);font-weight:700}
+.project-note{font-size:.72rem;color:#7892a8;margin:-8px 0 18px}
+
 .statement{border:1px solid #285264;background:linear-gradient(120deg,rgba(85,230,208,.08),rgba(105,168,255,.05));padding:36px;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}.statement h3{font-size:1.5rem;letter-spacing:-.05em;margin:0 0 8px}.statement p{color:var(--muted);margin:0;max-width:700px;font-size:.9rem}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contact-copy{color:var(--muted);max-width:470px}.contact-list{border-top:1px solid var(--line)}.contact-row{display:flex;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);font-size:.88rem}.contact-row span:first-child{color:var(--muted)}.contact-row span:last-child{color:var(--cyan);text-align:right}
 footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-family:"DM Mono",monospace;font-size:.68rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
@@ -103,12 +139,45 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-f
 </section>
 <section id="projects" style="background:rgba(13,27,43,.45);border-block:1px solid rgba(32,54,76,.65)">
   <div class="wrap">
-    <div class="section-head reveal"><div class="section-index">04 / SELECTED WORK</div><div><h2 class="section-title">How I approach<br><span style="color:var(--cyan)">technical problems.</span></h2><p class="section-sub">Representative work themes based on my support experience. Sensitive production details and customer data are intentionally excluded.</p></div></div>
-    <div class="project-grid">
-      <article class="project reveal"><span class="project-label">CASE STUDY / DATA QUALITY</span><h3>Database Reconciliation & Validation</h3><p>Investigate missing or inconsistent records by comparing related tables, validating keys and status values, and confirming whether the issue is data-related or process-related.</p><div class="tags"><span class="tag">SQL</span><span class="tag">Oracle</span><span class="tag">Data Quality</span></div></article>
-      <article class="project reveal"><span class="project-label">CASE STUDY / OPERATIONS</span><h3>Batch Failure Investigation</h3><p>Review job status, execution output, and application logs to narrow down failure points, coordinate next steps, and record a concise technical resolution.</p><div class="tags"><span class="tag">UC4 / AppWorx</span><span class="tag">Linux</span><span class="tag">Monitoring</span></div></article>
-      <article class="project reveal"><span class="project-label">CASE STUDY / INCIDENT RESPONSE</span><h3>Root-Cause Analysis & Recovery</h3><p>Compare expected processing with actual message or record content, preserve evidence, apply an approved corrective action, and verify the result before closing the incident.</p><div class="tags"><span class="tag">RCA</span><span class="tag">PL/SQL</span><span class="tag">Documentation</span></div></article>
-      <article class="project reveal"><span class="project-label">FOUNDATION / DEVELOPMENT</span><h3>Backend & Database Foundations</h3><p>Build on IT education and backend internship experience with web technologies, backend logic, database design concepts, debugging, and an ongoing learning path in JavaScript and software engineering.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Backend</span><span class="tag">Databases</span></div></article>
+    <div class="section-head reveal"><div class="section-index">04 / PORTFOLIO</div><div><h2 class="section-title">Projects I’ve<br><span style="color:var(--cyan)">built.</span></h2><p class="section-sub">A showcase of my frontend work. Open each live demo to explore the experience, or view the source code on GitHub.</p></div></div>
+    <div class="project-grid frontend-projects">
+      <article class="project project-showcase reveal">
+        <a class="project-preview" href="https://gelaybbb-art.github.io/queryvault/" target="_blank" rel="noopener noreferrer" aria-label="Open QueryVault live demo">
+          <img src="https://image.thum.io/get/width/1200/crop/675/https://gelaybbb-art.github.io/queryvault/" alt="QueryVault live website preview" loading="lazy">
+          <span class="preview-fallback">QUERYVAULT<span>SQL TOOLKIT</span></span>
+        </a>
+        <div class="project-content">
+          <div class="project-meta"><span class="project-label">FRONTEND PROJECT</span><span class="project-number">01</span></div>
+          <h3>QueryVault</h3>
+          <p>A personal SQL toolkit for keeping query snippets, Oracle error notes, troubleshooting references, and safe-run checklists organized in one workspace.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">LocalStorage</span></div>
+          <div class="project-actions"><a class="project-action demo" href="https://gelaybbb-art.github.io/queryvault/" target="_blank" rel="noopener noreferrer">Explore live demo <span>↗</span></a><a class="project-action" href="https://github.com/gelaybbb-art/queryvault" target="_blank" rel="noopener noreferrer">Source code <span>↗</span></a></div>
+        </div>
+      </article>
+      <article class="project project-showcase reveal">
+        <a class="project-preview" href="https://gelaybbb-art.github.io/skillloop/" target="_blank" rel="noopener noreferrer" aria-label="Open SkillLoop live demo">
+          <img src="https://image.thum.io/get/width/1200/crop/675/https://gelaybbb-art.github.io/skillloop/" alt="SkillLoop live website preview" loading="lazy">
+          <span class="preview-fallback">SKILLLOOP<span>LEARNING EXPERIENCE</span></span>
+        </a>
+        <div class="project-content">
+          <div class="project-meta"><span class="project-label">FRONTEND PROJECT</span><span class="project-number">02</span></div>
+          <h3>SkillLoop</h3>
+          <p>A frontend web project built to present a clear, engaging user experience. Visit the live version to explore its design and interactions.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">GitHub Pages</span></div>
+          <div class="project-actions"><a class="project-action demo" href="https://gelaybbb-art.github.io/skillloop/" target="_blank" rel="noopener noreferrer">Explore live demo <span>↗</span></a><a class="project-action" href="https://github.com/gelaybbb-art/skillloop" target="_blank" rel="noopener noreferrer">Source code <span>↗</span></a></div>
+        </div>
+      </article>
+    </div>
+    <div class="case-study-heading reveal">
+      <span class="mono">OTHER TECHNICAL WORK</span>
+      <h3>Support & engineering case studies</h3>
+      <p>Examples of the investigation and problem-solving approach I use in enterprise application and database support.</p>
+    </div>
+    <div class="project-grid case-study-grid">
+      <article class="project reveal"><span class="project-label">DATA QUALITY</span><h3>Database Reconciliation & Validation</h3><p>Compare related tables, validate keys and status values, and investigate missing or inconsistent records.</p><div class="tags"><span class="tag">SQL</span><span class="tag">Oracle</span><span class="tag">Data Quality</span></div></article>
+      <article class="project reveal"><span class="project-label">OPERATIONS</span><h3>Batch Failure Investigation</h3><p>Review job status, execution output, and logs to identify failure points and document technical findings.</p><div class="tags"><span class="tag">UC4 / AppWorx</span><span class="tag">Linux</span><span class="tag">Monitoring</span></div></article>
+      <article class="project reveal"><span class="project-label">INCIDENT RESPONSE</span><h3>Root-Cause Analysis & Recovery</h3><p>Preserve evidence, compare expected and actual processing, apply approved corrections, and verify the result.</p><div class="tags"><span class="tag">RCA</span><span class="tag">PL/SQL</span><span class="tag">Documentation</span></div></article>
+      <article class="project reveal"><span class="project-label">DEVELOPMENT FOUNDATIONS</span><h3>Backend & Database Foundations</h3><p>Continue developing skills in backend logic, database design, debugging, JavaScript, and software engineering.</p><div class="tags"><span class="tag">JavaScript</span><span class="tag">Backend</span><span class="tag">Databases</span></div></article>
     </div>
   </div>
 </section>
